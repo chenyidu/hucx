@@ -27,7 +27,7 @@
 
 #define UCP_RSC_CONFIG_ALL    "all"
 
-ucp_am_handler_t ucp_am_handlers[UCP_AM_ID_LAST] = {{0, NULL, NULL}};
+ucp_am_handler_t ucp_am_handlers[UCP_AM_ID_MAX] = {{0, NULL, NULL}};
 
 static const char *ucp_atomic_modes[] = {
     [UCP_ATOMIC_MODE_CPU]    = "cpu",

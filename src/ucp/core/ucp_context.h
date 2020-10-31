@@ -270,6 +270,7 @@ typedef struct ucp_am_handler {
     ucp_am_tracer_t               tracer;
     uint32_t                      flags;
     uct_am_callback_t             proxy_cb;
+    void                         *alt_arg;
 } ucp_am_handler_t;
 
 typedef struct ucp_tl_iface_atomic_flags {
