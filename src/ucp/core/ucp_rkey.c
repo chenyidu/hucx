@@ -469,7 +469,6 @@ void ucp_rkey_resolve_inner(ucp_rkey_h rkey, ucp_ep_h ep)
     } else {
         rkey->cache.rma_proto     = &ucp_rma_basic_proto;
         rkey->cache.rma_rkey      = uct_rkey;
-        rkey->cache.rma_proto     = &ucp_rma_basic_proto;
         rkey->cache.max_put_short = config->rma[rkey->cache.rma_lane].max_put_short;
     }
 
